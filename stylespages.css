@@ -1,0 +1,117 @@
+body {
+    background-image: url("cover-page.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Comfortaa', cursive;
+}
+.container {
+    margin: 20px 100px;
+    background: rgba(0, 0, 0, 0.415);
+    border-radius: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: whitesmoke;
+}
+.header {
+    font-size: 50px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.text {
+    padding: 0 80px;
+    color: whitesmoke;
+    line-height: 25px;
+}
+.poster {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.item {
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+li {
+    padding: 5px;
+    color: whitesmoke;
+    list-style: none;
+}
+
+li:hover {
+    box-shadow: 0 6px 20px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px;
+    font: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 150px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.imdb {
+    background-color: rgb(189, 59, 12);
+}
+.watch {
+    background-color: teal;
+}
+.btn:hover {
+    opacity: 0.9;
+    box-shadow: 1px 1px 10px whitesmoke;
+}
+
+@media all and (max-width: 800px) {
+    .container {
+        margin: 20px auto;
+    }
+    .text {
+        font-size: 25px;
+        padding: 0 40px;
+    }
+    a {
+        font-size: 25px;
+    }
+    .item {
+        text-decoration: underline;
+    }
+}
+@media all and (max-width: 500px) {
+    .head {
+        font-size: 20px;
+    }
+    .poster {
+        width: 200px;
+    }
+    .text {
+        font-size: 15px;   
+    }
+    a {
+        font-size: 15px;
+    }
+    .navi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,67 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cover-main.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+}
+.heading {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.item:hover {
+    box-shadow: 0 6px 20px 0 rgba(255, 255, 255, 0.5);
+}
+
+@media all and (max-width: 800px) {
+    .item {
+        font-size: 30px;
+    }
+    .heading {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 500px) {
+    .item {
+        font-size: 20px;
+    }
+    .heading {
+        font-size: 22px;
+    }
+}
